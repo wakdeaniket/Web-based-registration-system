@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Portal</title>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: #4CAF50;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width:100%;
+    font-size: 16px;
+    margin: 4px 35x;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #008CBA;
+    color: white;
+}
+.button2 {
+    background-color: #f44336; 
+    color: black; 
+    
+}
+
+
+h1 {
+	font-weight: 100;
+	letter-spacing: 1px;
+	margin: 10px 0 20px 10px;
+	color:white;
+}
+.box {
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+	max-width: 350px;
+	border-radius: 2px;
+	box-shadow: $shadow2;
+	background-color: rgba(0,0,0,0.2);
+}
+body {
+	
+	display: flex;
+	padding: 20px;
+	min-height: 100vh;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: #a06060;
+	background: linear-gradient(130deg, #a06060 20%, #aaa 100%) no-repeat center center fixed;
+}
+input[type="submit"] {
+	border: none;
+	float: right;
+	outline: none;
+	padding: 10px;
+	font-weight: 300;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	box-shadow: $shadow1;
+	text-transform: uppercase;
+	background-color: rgba(255,255,255,0.2);
+	transition: all 0.2s ease-in;
+	
+	&:hover,
+	&:focus {
+		box-shadow: $shadow3;
+	}
+}
+</style>
+</head>
+<body>
+ <div class="box">
+
+
+<h1 align="center">Admin Portal</h1>
+
+
+<form action="Add_user.html">
+    <button class="button button1" type="submit" value="Add_User">Add User</button>
+</form>
+<br>
+<form action="Delete_user.html">
+    <button class="button button1" type="submit" value="Delete_User">Delete User</button>
+</form>
+<br>
+<form action="Show_user.jsp">
+	<button class="button button1" type="submit" value="Show_User">Show_User</button>
+</form>
+<br>
+<form action="Show_student.jsp">
+	<button class="button button1" type="submit" value="Show_Student">Show_Student</button>
+</form>
+<br>
+<form action="Show_staff.jsp">
+	<button class="button button1" type="submit" value="Show_Staff">Show staff</button>
+</form>
+<br>
+<form action="Admin_login.html">
+	<button class="button button2" type="submit" value="Logout">Logout</button>
+</form>
+</div>
+</body>
+</html>
